@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     "YC Request for Startups",
     "AI-powered services YC",
   ],
+  alternates: {
+    canonical: "https://ainativeagency.com/blog/yc-ai-native-agency",
+  },
 };
 
 export default function YCAINativeAgency() {

@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     "AI professional services",
     "AI agency business model",
   ],
+  alternates: {
+    canonical: "https://ainativeagency.com/blog/ai-native-agency-verticals",
+  },
 };
 
 export default function AINativeAgencyVerticals() {

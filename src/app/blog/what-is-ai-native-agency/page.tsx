@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     "AI-first agency",
     "AI-powered services",
   ],
+  alternates: {
+    canonical: "https://ainativeagency.com/blog/what-is-ai-native-agency",
+  },
   openGraph: {
     title: "What Is an AI-Native Agency? The Definitive Guide",
     description:

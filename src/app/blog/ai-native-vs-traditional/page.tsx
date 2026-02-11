@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     "AI-native agency margins",
     "agency business model comparison",
   ],
+  alternates: {
+    canonical: "https://ainativeagency.com/blog/ai-native-vs-traditional",
+  },
 };
 
 export default function AINativeVsTraditional() {
