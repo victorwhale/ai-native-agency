@@ -300,7 +300,7 @@ export default function HomePage() {
                 discuss your project and find the right AI-native agency.
               </p>
               <iframe
-                src="https://cal.com/victor-jaikin?embed=true&theme=dark&layout=month_view"
+                src="https://cal.eu/victor-jaikin?embed=true&theme=dark&layout=month_view"
                 className="w-full border-0 rounded-lg"
                 style={{ height: 500 }}
                 title="Book a call"
