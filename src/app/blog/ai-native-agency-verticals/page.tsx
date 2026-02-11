@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArticleLayout } from "@/components/ArticleLayout";
+import { ArticleStructuredData, FAQStructuredData, BreadcrumbStructuredData } from "@/components/StructuredData";
 
 export const metadata: Metadata = {
   title: "The 3 Pillars of AI-Native Agencies: Sales, Marketing & Back-Office",
@@ -24,6 +25,48 @@ export const metadata: Metadata = {
 export default function AINativeAgencyVerticals() {
   return (
     <ArticleLayout>
+      <ArticleStructuredData
+        title="The 3 Pillars of AI-Native Agencies: Sales, Marketing & Back-Office"
+        description="AI-native agencies are disrupting three major verticals: sales, marketing, and back-office services. Explore real examples, margin analysis, and how each vertical achieves 65-80% gross margins."
+        slug="ai-native-agency-verticals"
+        datePublished="2026-02-11"
+        dateModified="2026-02-11"
+      />
+      <BreadcrumbStructuredData
+        items={[
+          { name: "Home", url: "https://ai-native-agency.com" },
+          { name: "Blog", url: "https://ai-native-agency.com/blog" },
+          { name: "AI-Native Agency Verticals", url: "https://ai-native-agency.com/blog/ai-native-agency-verticals" },
+        ]}
+      />
+      <FAQStructuredData
+        faqs={[
+          {
+            question: "Which vertical has the largest market opportunity?",
+            answer: "Back-office services represent the largest addressable market by total spend, with global outsourcing of legal, accounting, and HR services exceeding $600 billion annually. However, marketing has the most fragmented competitive landscape, and sales has the fastest feedback loops. The best market depends on your definition of opportunity - total addressable market, ease of entry, or speed to revenue."
+          },
+          {
+            question: "Can one AI-native agency cover all three verticals?",
+            answer: "In theory, yes. In practice, the most successful AI-native agencies focus deeply on one vertical before expanding. Each vertical has distinct domain knowledge requirements, different buyer personas, and unique compliance considerations. The recommended approach is to dominate one vertical, build a reputation, and then expand into adjacent verticals once your systems and processes are proven."
+          },
+          {
+            question: "What is the minimum viable team for each vertical?",
+            answer: "For sales, a founding team of 2-3 people can serve 10-20 clients. For marketing, a similar team size works, though adding a creative director early is valuable. For back-office, you typically need at least one domain expert from day one. Across all verticals, the minimum viable team is 2-4 people, which is radically smaller than the 15-25 people a traditional agency needs to launch credibly."
+          },
+          {
+            question: "How do AI-native agencies handle industry-specific compliance?",
+            answer: "Compliance is handled through a combination of AI guardrails and human oversight. AI systems are trained on jurisdiction-specific regulations and flag anything outside their confidence threshold for human review. AI actually improves compliance in many cases because it never forgets a rule, never gets tired, and can cross-reference thousands of regulations instantly."
+          },
+          {
+            question: "What AI tools are most commonly used in each vertical?",
+            answer: "Sales agencies typically build on top of large language models like GPT-4 and Claude, combined with data enrichment APIs and CRM platforms. Marketing agencies use language models for content and image generation models for visuals. Back-office agencies rely heavily on language models for document analysis, specialized legal AI for contract review, and accounting automation platforms."
+          },
+          {
+            question: "How long does it take to build an AI-native agency in these verticals?",
+            answer: "The timeline to a functional service offering is 4-8 weeks to build initial AI workflows, 2-4 weeks to onboard first clients, and 3-6 months to achieve repeatable processes. Getting to profitability and scale typically takes 12-18 months. You can start generating revenue with minimal upfront investment and iterate on your AI systems based on real client feedback from week one."
+          }
+        ]}
+      />
       <h1>
         The 3 Pillars of AI-Native Agencies: Sales, Marketing &amp; Back-Office
       </h1>

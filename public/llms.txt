@@ -1,0 +1,29 @@
+# AI-Native Agency
+
+> The definitive resource on AI-native agencies — professional services firms that use artificial intelligence as their core operating system.
+
+## About
+
+AI-Native Agency is an educational site covering the emerging AI-native agency model: companies that use AI as their core operating system to deliver professional services with software-like margins (65-80%), 10x speed, and infinite scalability. The site is backed by research from Y Combinator, Aaron Epstein, and real-world examples.
+
+## Pages
+
+- [Homepage](https://ai-native-agency.com/): Overview of the AI-native agency model, key advantages, verticals, and featured articles.
+- [What Is an AI-Native Agency?](https://ai-native-agency.com/blog/what-is-ai-native-agency): The definitive guide — definition, core principles, AI-native vs AI-enabled vs traditional spectrum, and real-world examples.
+- [Why YC Is Betting on AI-Native Agencies](https://ai-native-agency.com/blog/yc-ai-native-agency): Y Combinator's Request for Startups, Aaron Epstein's thesis, the "software margins" argument, and YC-backed examples.
+- [AI-Native Agency Verticals: Sales, Marketing & Back-Office](https://ai-native-agency.com/blog/ai-native-agency-verticals): Deep dive into the three major verticals — what they do, how they achieve 65-80% margins, and real examples per category.
+- [AI-Native vs Traditional Agency](https://ai-native-agency.com/blog/ai-native-vs-traditional): Side-by-side comparison across 11 dimensions — margins, speed, scalability, pricing, quality, and when each model wins.
+- [Contact](https://ai-native-agency.com/contact): Get matched with an AI-native agency or book a free consultation call.
+
+## Key Concepts
+
+- **AI-Native Agency**: A professional services firm built from the ground up with AI at its core, where AI performs 70-90% of production work.
+- **Software-Like Margins**: AI-native agencies achieve 65-80% gross margins vs 20-35% for traditional agencies.
+- **Three Verticals**: Sales (outbound, lead gen), Marketing (content, ads, SEO), Back-Office (legal, HR, accounting).
+- **Y Combinator RFS**: YC included "AI-powered professional services" in their official Request for Startups.
+- **Aaron Epstein**: YC Group Partner who champions the AI-native agency thesis.
+
+## Contact
+
+For inquiries: victor@jaikin.eu
+Book a call: https://cal.com/victor-jaikin

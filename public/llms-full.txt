@@ -1,0 +1,83 @@
+# AI-Native Agency — Full Content for LLMs
+
+> The definitive resource on AI-native agencies — professional services firms that use artificial intelligence as their core operating system.
+
+## What Is an AI-Native Agency?
+
+An AI-native agency is a professional services firm built from the ground up with artificial intelligence as its core operating system — not a bolt-on tool, not an experiment running in a side department, but the fundamental architecture on which every workflow, process, and delivery mechanism is designed.
+
+In an AI-native agency, AI performs the majority of the production work — typically 70 to 90 percent — while human professionals supervise output, refine strategy, manage client relationships, and handle the edge cases that require nuanced judgment.
+
+### The Spectrum: Traditional → AI-Enabled → AI-Native
+
+- **Traditional Agency** (0-10% AI): Human-driven workflows, AI used minimally or not at all. Margins: 20-35%.
+- **AI-Enabled Agency** (10-40% AI): Existing workflows enhanced with AI tools (Jasper, ChatGPT, etc.). Humans still do most work. Margins: 30-45%.
+- **AI-Native Agency** (70-90% AI): Every workflow designed around AI capabilities from day one. Humans supervise and handle edge cases. Margins: 65-80%.
+
+### Five Core Principles
+
+1. **AI-First Architecture**: Every workflow starts with "How would AI do this?" not "How can AI help with this?"
+2. **Outcome-Based Pricing**: Clients pay for deliverables and results, not hours. This aligns incentives with efficiency.
+3. **Software-Like Margins**: 65-80% gross margins by replacing labor-intensive processes with AI systems.
+4. **Human-in-the-Loop, Not Human-in-the-Center**: Humans supervise, refine, and handle exceptions — they don't do the bulk production work.
+5. **Continuous Learning Systems**: AI improves with every project. Institutional knowledge compounds automatically.
+
+## Why Y Combinator Is Betting on AI-Native Agencies
+
+Y Combinator included "AI-powered professional services" in their official Request for Startups (RFS). Group Partner Aaron Epstein has publicly championed the thesis that AI-native agencies will capture the $700B+ professional services market.
+
+### The Software Margins Thesis
+
+Traditional agencies are labor-intensive businesses with thin margins. The cost structure is fundamentally tied to headcount — more clients means more employees. AI-native agencies break this constraint by replacing the labor-intensive middle with AI systems that can handle 10 or 10,000 clients with marginal cost increases.
+
+### Why VCs Now Fund Services
+
+Historically, venture capitalists avoided services businesses because they didn't scale like software. AI changes this equation: if an agency can achieve software-like margins (65-80%) while delivering personalized services, it becomes as attractive as a SaaS company — potentially more so, because the TAM is the entire $700B+ professional services market.
+
+## The Three Verticals
+
+### Sales
+AI-native sales agencies automate outbound prospecting, lead qualification, CRM management, and pipeline optimization. They replace entire SDR teams with intelligent systems running 24/7.
+- **What they replace**: SDR teams, manual prospecting, data entry
+- **Typical margin**: 70-80%
+- **Examples**: AI-powered outbound, lead scoring, meeting booking, CRM enrichment
+
+### Marketing
+AI-native marketing agencies produce content, manage ad campaigns, optimize SEO, and generate creative assets at scale — delivering in hours what traditional agencies take weeks to produce.
+- **What they replace**: Content writers, ad managers, SEO specialists, designers
+- **Typical margin**: 65-75%
+- **Examples**: Content creation at scale, programmatic ad management, AI-driven SEO, creative production
+
+### Back-Office
+AI-native back-office agencies handle legal document review, accounting, HR processes, and recruiting — automating the repetitive work that traditionally required large teams of specialists.
+- **What they replace**: Paralegals, bookkeepers, HR coordinators, recruiters
+- **Typical margin**: 70-85%
+- **Examples**: Contract review, bookkeeping automation, HR workflow automation, talent sourcing
+
+## AI-Native vs Traditional Agency: Key Comparison
+
+| Dimension | Traditional Agency | AI-Native Agency |
+|---|---|---|
+| Gross Margin | 20-35% | 65-80% |
+| Delivery Speed | Days to weeks | Hours to days |
+| Scalability | Linear (headcount) | Exponential (AI systems) |
+| Pricing Model | Hourly / retainer | Outcome-based / per-deliverable |
+| Team Size per Client | 3-8 people | 1-2 people + AI |
+| Quality Consistency | Variable (human-dependent) | High (AI-standardized) |
+| Learning Curve | Per-employee | Institutional (compounds) |
+| Client Onboarding | 2-4 weeks | Days |
+| Operating Leverage | Low | Very high |
+| Defensibility | Relationships / reputation | AI systems + data flywheel |
+| Best For | Complex strategy, relationship-heavy | Repeatable, scalable delivery |
+
+### When Traditional Still Wins
+- High-stakes creative strategy requiring deep human intuition
+- Relationship-driven industries where personal touch is the product
+- Novel, first-of-kind projects with no precedent for AI to learn from
+- Highly regulated environments requiring certified human oversight
+
+## Contact
+
+- Email: victor@jaikin.eu
+- Book a free 30-minute consultation: https://cal.com/victor-jaikin
+- Website: https://ai-native-agency.com

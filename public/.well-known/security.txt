@@ -1,0 +1,3 @@
+Contact: mailto:victor@jaikin.eu
+Preferred-Languages: en, fr
+Canonical: https://ai-native-agency.com/.well-known/security.txt
