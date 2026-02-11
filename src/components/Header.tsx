@@ -5,6 +5,7 @@ const navLinks = [
   { href: "/blog/yc-ai-native-agency", label: "YC Thesis" },
   { href: "/blog/ai-native-agency-verticals", label: "Verticals" },
   { href: "/blog/ai-native-vs-traditional", label: "vs Traditional" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export function Header() {

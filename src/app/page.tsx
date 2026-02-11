@@ -269,6 +269,25 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      {/* Contact CTA */}
+      <section className="bg-surface">
+        <div className="mx-auto max-w-6xl px-6 py-20 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+            Ready to Work with an AI-Native Agency?
+          </h2>
+          <p className="mt-4 text-muted text-lg max-w-2xl mx-auto">
+            Whether you&apos;re looking for an AI-native partner or want to
+            learn more about this model, we&apos;re here to help.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-flex items-center mt-8 px-8 py-4 bg-accent text-white rounded-lg font-medium text-lg hover:bg-accent-light transition-colors"
+          >
+            Get in Touch
+          </Link>
+        </div>
+      </section>
     </>
   );
 }

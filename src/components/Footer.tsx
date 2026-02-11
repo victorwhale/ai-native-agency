@@ -49,13 +49,17 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <p className="font-semibold mb-3">About This Site</p>
+            <p className="font-semibold mb-3">Get in Touch</p>
             <p className="text-sm text-muted leading-relaxed">
-              This site explores the emerging AI-native agency model — how
-              companies like Y Combinator-backed startups are replacing
-              traditional agencies with AI-first service delivery. All content is
-              research-driven and regularly updated.
+              Want to work with an AI-native agency or learn more about this
+              emerging model? We&apos;d love to hear from you.
             </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center mt-4 text-sm text-accent-light hover:text-accent font-medium transition-colors"
+            >
+              Contact Us &rarr;
+            </Link>
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-border text-center text-xs text-muted">
