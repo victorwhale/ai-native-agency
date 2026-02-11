@@ -30,7 +30,7 @@ export function ArticleStructuredData({
     dateModified,
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://ainativeagency.com/blog/${slug}`,
+      "@id": `https://ai-native-agency.com/blog/${slug}`,
     },
   };
 
@@ -73,7 +73,7 @@ export function WebSiteStructuredData() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "AI-Native Agency",
-    url: "https://ainativeagency.com",
+    url: "https://ai-native-agency.com",
     description:
       "The definitive resource on AI-native agencies — professional services firms that use AI as their core operating system.",
   };

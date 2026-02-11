@@ -18,7 +18,7 @@ export function ContactForm() {
       <input
         type="hidden"
         name="_next"
-        value="https://ainativeagency.com/contact/thank-you"
+        value="https://ai-native-agency.com/contact/thank-you"
       />
       <input type="text" name="_honey" className="hidden" />
 

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "AI-powered services YC",
   ],
   alternates: {
-    canonical: "https://ainativeagency.com/blog/yc-ai-native-agency",
+    canonical: "https://ai-native-agency.com/blog/yc-ai-native-agency",
   },
 };
 

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Describe your project and get matched with the right AI-native agency. We connect businesses with top AI-first teams for sales, marketing, and back-office projects.",
   alternates: {
-    canonical: "https://ainativeagency.com/contact",
+    canonical: "https://ai-native-agency.com/contact",
   },
 };
 

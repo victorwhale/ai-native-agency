@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/contact/thank-you"],
       },
     ],
-    sitemap: "https://ainativeagency.com/sitemap.xml",
+    sitemap: "https://ai-native-agency.com/sitemap.xml",
   };
 }

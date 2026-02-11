@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "agency business model comparison",
   ],
   alternates: {
-    canonical: "https://ainativeagency.com/blog/ai-native-vs-traditional",
+    canonical: "https://ai-native-agency.com/blog/ai-native-vs-traditional",
   },
 };
 

@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ainativeagency.com"),
+  metadataBase: new URL("https://ai-native-agency.com"),
   title: {
     default: "AI-Native Agency — The Future of Professional Services",
     template: "%s | AI-Native Agency",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://ainativeagency.com",
+    canonical: "https://ai-native-agency.com",
   },
 };
 
