@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ContactForm } from "@/components/ContactForm";
 
 const pillarArticles = [
   {
@@ -94,16 +95,16 @@ export default function HomePage() {
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
-              href="/blog/what-is-ai-native-agency"
+              href="#contact"
               className="inline-flex items-center px-6 py-3 bg-accent text-white rounded-lg font-medium hover:bg-accent-light transition-colors"
             >
-              Read the Definitive Guide
+              Start a Project
             </Link>
             <Link
-              href="/blog/yc-ai-native-agency"
+              href="/blog/what-is-ai-native-agency"
               className="inline-flex items-center px-6 py-3 border border-border rounded-lg font-medium text-muted hover:text-foreground hover:border-foreground/30 transition-colors"
             >
-              Why YC Is Betting Big
+              Read the Definitive Guide
             </Link>
           </div>
         </div>
@@ -270,22 +271,26 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Contact CTA */}
-      <section className="bg-surface">
-        <div className="mx-auto max-w-6xl px-6 py-20 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-            Ready to Work with an AI-Native Agency?
-          </h2>
-          <p className="mt-4 text-muted text-lg max-w-2xl mx-auto">
-            Whether you&apos;re looking for an AI-native partner or want to
-            learn more about this model, we&apos;re here to help.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center mt-8 px-8 py-4 bg-accent text-white rounded-lg font-medium text-lg hover:bg-accent-light transition-colors"
-          >
-            Get in Touch
-          </Link>
+      {/* Contact Form */}
+      <section id="contact" className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--color-accent)_0%,_transparent_50%)] opacity-10" />
+        <div className="relative mx-auto max-w-3xl px-6 py-20 md:py-28">
+          <div className="text-center mb-12">
+            <p className="text-accent-light font-mono text-sm mb-4 tracking-wide uppercase">
+              Start Your Project
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+              Get Matched with an AI-Native Agency
+            </h2>
+            <p className="mt-4 text-muted text-lg max-w-2xl mx-auto">
+              Describe your project and budget — we&apos;ll connect you with
+              the right AI-native agency to deliver results with 10x speed and
+              software-like efficiency.
+            </p>
+          </div>
+          <div className="p-8 md:p-10 rounded-2xl border border-border bg-surface/50 backdrop-blur-sm">
+            <ContactForm />
+          </div>
         </div>
       </section>
     </>
