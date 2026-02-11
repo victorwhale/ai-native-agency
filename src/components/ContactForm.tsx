@@ -134,23 +134,12 @@ export function ContactForm() {
         />
       </div>
 
-      <div className="flex flex-col sm:flex-row items-center gap-4">
-        <button
-          type="submit"
-          className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 bg-accent text-white rounded-lg font-medium text-lg hover:bg-accent-light transition-colors cursor-pointer"
-        >
-          Get Matched with an Agency
-        </button>
-        <span className="text-muted text-sm">or</span>
-        <a
-          href="https://agence-automatisation-ia.net/#contact"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 border border-border rounded-lg font-medium text-lg text-muted hover:text-foreground hover:border-foreground/30 transition-colors"
-        >
-          Book a Call
-        </a>
-      </div>
+      <button
+        type="submit"
+        className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 bg-accent text-white rounded-lg font-medium text-lg hover:bg-accent-light transition-colors cursor-pointer"
+      >
+        Get Matched with an Agency
+      </button>
     </form>
   );
 }

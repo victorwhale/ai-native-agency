@@ -271,10 +271,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Contact Form */}
+      {/* Contact Form + Booking */}
       <section id="contact" className="relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--color-accent)_0%,_transparent_50%)] opacity-10" />
-        <div className="relative mx-auto max-w-3xl px-6 py-20 md:py-28">
+        <div className="relative mx-auto max-w-6xl px-6 py-20 md:py-28">
           <div className="text-center mb-12">
             <p className="text-accent-light font-mono text-sm mb-4 tracking-wide uppercase">
               Start Your Project
@@ -283,13 +283,29 @@ export default function HomePage() {
               Get Matched with an AI-Native Agency
             </h2>
             <p className="mt-4 text-muted text-lg max-w-2xl mx-auto">
-              Describe your project and budget — we&apos;ll connect you with
-              the right AI-native agency to deliver results with 10x speed and
-              software-like efficiency.
+              Fill out the form or book a free call — we&apos;ll connect you
+              with the right AI-native agency to deliver results with 10x speed
+              and software-like efficiency.
             </p>
           </div>
-          <div className="p-8 md:p-10 rounded-2xl border border-border bg-surface/50 backdrop-blur-sm">
-            <ContactForm />
+          <div className="grid lg:grid-cols-2 gap-8">
+            <div className="p-8 md:p-10 rounded-2xl border border-border bg-surface/50 backdrop-blur-sm">
+              <h3 className="text-xl font-bold mb-6">Describe Your Project</h3>
+              <ContactForm />
+            </div>
+            <div className="p-8 md:p-10 rounded-2xl border border-border bg-surface/50 backdrop-blur-sm">
+              <h3 className="text-xl font-bold mb-6">Book a Free Call</h3>
+              <p className="text-muted text-sm mb-6">
+                Prefer to talk? Schedule a free 30-minute consultation to
+                discuss your project and find the right AI-native agency.
+              </p>
+              <iframe
+                src="https://cal.com/victor-jaikin?embed=true&theme=dark&layout=month_view"
+                className="w-full border-0 rounded-lg"
+                style={{ height: 500 }}
+                title="Book a call"
+              />
+            </div>
           </div>
         </div>
       </section>
