@@ -431,7 +431,12 @@ export default function YCAINativeAgency() {
         is production-ready for a growing number of professional use cases.
         The gap between AI output and human output continues to narrow, and
         for many routine tasks, AI output is already indistinguishable from
-        or superior to human work.
+        or superior to human work. For a complete breakdown of the tech
+        stack required to build these capabilities, see our{" "}
+        <Link href="/blog/ai-native-agency-tech-stack">
+          guide to AI-native agency tools and platforms
+        </Link>
+        .
       </p>
 
       <p>

@@ -638,7 +638,11 @@ export default function AINativeVsTraditional() {
         their existing teams. This will improve their margins and speed
         somewhat, but the fundamental model (large teams billing hours) will
         remain intact. You cannot bolt AI onto a labor model and achieve
-        AI-native economics.
+        AI-native economics. Read our detailed{" "}
+        <Link href="/alternatives/ai-native-vs-ai-enabled">
+          comparison of AI-native vs AI-enabled agencies
+        </Link>{" "}
+        for a deeper exploration of this distinction.
       </p>
 
       <h3>AI-Native Agencies Will Hire More Specialized Humans</h3>

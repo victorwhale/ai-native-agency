@@ -694,7 +694,12 @@ export default function WhatIsAINativeAgency() {
         are being built right now. They are small, lean, technically
         sophisticated, and powered by AI systems that get better with every
         client engagement. They are AI-native, and they represent a fundamental
-        reimagining of what an agency can be.
+        reimagining of what an agency can be. If you&rsquo;re ready to start
+        your own, read our{" "}
+        <Link href="/blog/how-to-start-ai-native-agency">
+          step-by-step guide to launching an AI-native agency
+        </Link>
+        .
       </p>
     </ArticleLayout>
   );

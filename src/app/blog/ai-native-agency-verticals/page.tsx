@@ -566,7 +566,12 @@ export default function AINativeAgencyVerticals() {
         <li>
           <strong>All three achieve 65-80% gross margins</strong> compared to
           20-35% at traditional agencies. This is not a minor improvement &mdash;
-          it represents a fundamental restructuring of the cost base.
+          it represents a fundamental restructuring of the cost base. For
+          detailed guidance on pricing each vertical, read our{" "}
+          <Link href="/blog/ai-native-agency-pricing">
+            comprehensive pricing models guide
+          </Link>
+          .
         </li>
         <li>
           <strong>
