@@ -351,7 +351,7 @@ export default function HowToStartAINativeAgency() {
       </p>
 
       <p>
-        For more on pricing strategy, see our comprehensive <Link href="/blog/ai-native-agency-pricing">guide to AI-native agency pricing models</Link>.
+        This validation-first approach is how many successful AI-native agencies have launched. For insights on how Y Combinator-backed founders are building these businesses, read our analysis of <Link href="/blog/yc-ai-native-agency">AI-native agencies in the YC portfolio</Link>.
       </p>
 
       <h3>What to Measure</h3>
