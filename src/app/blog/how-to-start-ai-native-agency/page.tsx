@@ -52,7 +52,7 @@ export default function HowToStartAINativeAgency() {
       <BreadcrumbStructuredData
         items={[
           { name: "Home", url: "https://ai-native-agency.com" },
-          { name: "Blog", url: "https://ai-native-agency.com/blog/how-to-start-ai-native-agency" },
+          { name: "Blog", url: "https://ai-native-agency.com/blog" },
           { name: "How to Start an AI-Native Agency", url: "https://ai-native-agency.com/blog/how-to-start-ai-native-agency" },
         ]}
       />
