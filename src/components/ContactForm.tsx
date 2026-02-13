@@ -1,7 +1,12 @@
-const inputStyles =
-  "w-full px-4 py-3 rounded-lg bg-surface border border-border text-foreground placeholder:text-muted/50 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors";
+type ContactFormProps = {
+  variant?: "dark" | "light";
+};
 
-export function ContactForm() {
+export function ContactForm({ variant = "dark" }: ContactFormProps) {
+  const inputStyles =
+    variant === "light"
+      ? "w-full px-4 py-3 rounded-lg bg-light-surface border border-light-border text-light-text placeholder:text-light-muted/50 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
+      : "w-full px-4 py-3 rounded-lg bg-surface border border-border text-foreground placeholder:text-muted/50 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors";
   return (
     <form
       action="https://formsubmit.co/victor@jaikin.eu"
@@ -24,7 +29,7 @@ export function ContactForm() {
 
       <div className="grid sm:grid-cols-2 gap-6">
         <div>
-          <label htmlFor="name" className="block text-sm font-medium mb-2">
+          <label htmlFor="name" className={`block text-sm font-medium mb-2 ${variant === "light" ? "text-light-text" : ""}`}>
             Name
           </label>
           <input
@@ -37,7 +42,7 @@ export function ContactForm() {
           />
         </div>
         <div>
-          <label htmlFor="email" className="block text-sm font-medium mb-2">
+          <label htmlFor="email" className={`block text-sm font-medium mb-2 ${variant === "light" ? "text-light-text" : ""}`}>
             Email
           </label>
           <input
@@ -53,7 +58,7 @@ export function ContactForm() {
 
       <div className="grid sm:grid-cols-2 gap-6">
         <div>
-          <label htmlFor="company" className="block text-sm font-medium mb-2">
+          <label htmlFor="company" className={`block text-sm font-medium mb-2 ${variant === "light" ? "text-light-text" : ""}`}>
             Company{" "}
             <span className="text-muted font-normal">(optional)</span>
           </label>
@@ -66,7 +71,7 @@ export function ContactForm() {
           />
         </div>
         <div>
-          <label htmlFor="budget" className="block text-sm font-medium mb-2">
+          <label htmlFor="budget" className={`block text-sm font-medium mb-2 ${variant === "light" ? "text-light-text" : ""}`}>
             Budget
           </label>
           <select
@@ -89,7 +94,7 @@ export function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="service" className="block text-sm font-medium mb-2">
+        <label htmlFor="service" className={`block text-sm font-medium mb-2 ${variant === "light" ? "text-light-text" : ""}`}>
           What do you need?
         </label>
         <select
@@ -121,7 +126,7 @@ export function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-medium mb-2">
+        <label htmlFor="message" className={`block text-sm font-medium mb-2 ${variant === "light" ? "text-light-text" : ""}`}>
           Tell us about your project
         </label>
         <textarea
@@ -136,7 +141,7 @@ export function ContactForm() {
 
       <button
         type="submit"
-        className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 bg-accent text-white rounded-lg font-medium text-lg hover:bg-accent-light transition-colors cursor-pointer"
+        className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 bg-gradient-to-r from-[#f97316] to-[#f59e0b] text-white rounded-lg font-medium text-lg hover:opacity-90 transition-opacity cursor-pointer"
       >
         Get Matched with an Agency
       </button>

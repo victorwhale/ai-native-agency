@@ -36,18 +36,21 @@ const advantages = [
     label: "Gross Margins",
     description:
       "AI-native agencies achieve software-like margins by replacing labor-intensive workflows with AI systems. Traditional agencies operate at 20–35%.",
+    color: "text-cyan",
   },
   {
     metric: "10x",
     label: "Faster Delivery",
     description:
       "What used to take a team of 5 people two weeks can be delivered in hours. AI compresses timelines dramatically.",
+    color: "text-orange",
   },
   {
     metric: "∞",
     label: "Scalability",
     description:
       "Scaling doesn't require linear headcount growth. AI systems handle 10 clients or 10,000 with marginal cost increases.",
+    color: "text-emerald",
   },
 ];
 
@@ -58,18 +61,21 @@ const verticals = [
       "AI-native sales agencies automate outbound prospecting, lead qualification, CRM management, and pipeline optimization. They replace entire SDR teams with intelligent systems that run 24/7.",
     examples:
       "Outbound automation, lead scoring, meeting booking, CRM enrichment",
+    color: "cyan",
   },
   {
     name: "Marketing",
     description:
       "AI-native marketing agencies produce content, manage ad campaigns, optimize SEO, and generate creative assets at scale — delivering in hours what traditional agencies take weeks to produce.",
     examples: "Content creation, ad management, SEO, creative production",
+    color: "orange",
   },
   {
     name: "Back-Office",
     description:
       "AI-native back-office agencies handle legal document review, accounting, HR processes, and recruiting — automating the repetitive work that traditionally required large teams of specialists.",
     examples: "Legal review, bookkeeping, HR automation, talent sourcing",
+    color: "emerald",
   },
 ];
 
@@ -78,7 +84,7 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--color-accent)_0%,_transparent_50%)] opacity-15" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_var(--color-accent)_0%,_transparent_40%),radial-gradient(ellipse_at_top_right,_var(--color-cyan)_0%,_transparent_40%)] opacity-20" />
         <div className="relative mx-auto max-w-6xl px-6 pt-24 pb-20 md:pt-36 md:pb-28">
           <p className="text-accent-light font-mono text-sm mb-4 tracking-wide uppercase">
             The Future of Professional Services
@@ -96,7 +102,7 @@ export default function HomePage() {
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
               href="#contact"
-              className="inline-flex items-center px-6 py-3 bg-accent text-white rounded-lg font-medium hover:bg-accent-light transition-colors"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-accent to-accent-light text-white rounded-lg font-medium hover:opacity-90 transition-opacity"
             >
               Start a Project
             </Link>
@@ -111,36 +117,42 @@ export default function HomePage() {
       </section>
 
       {/* What Is an AI-Native Agency */}
-      <section className="mx-auto max-w-6xl px-6 py-20">
-        <div className="max-w-3xl">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-            What Is an AI-Native Agency?
-          </h2>
-          <p className="mt-6 text-muted text-lg leading-relaxed">
-            An <strong className="text-foreground">AI-native agency</strong> is
-            a professional services firm built from the ground up with artificial
-            intelligence at its core. Unlike traditional agencies that add AI
-            tools on top of existing human-driven processes, an AI-native agency
-            designs every workflow around AI capabilities first, using human
-            expertise to supervise, refine, and handle edge cases.
-          </p>
-          <p className="mt-4 text-muted text-lg leading-relaxed">
-            The result is a fundamentally different business model: one that
-            operates with{" "}
-            <strong className="text-foreground">software-like margins</strong>{" "}
-            (65–80% vs. the traditional 20–35%), delivers at{" "}
-            <strong className="text-foreground">10x the speed</strong>, and can{" "}
-            <strong className="text-foreground">
-              scale without linear headcount growth
-            </strong>
-            .
-          </p>
-          <Link
-            href="/blog/what-is-ai-native-agency"
-            className="inline-flex items-center mt-6 text-accent-light hover:text-accent font-medium transition-colors"
-          >
-            Read the full definition &rarr;
-          </Link>
+      <section className="bg-light-bg">
+        <div className="mx-auto max-w-6xl px-6 py-20">
+          <div className="max-w-3xl">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-light-text">
+              What Is an AI-Native Agency?
+            </h2>
+            <p className="mt-6 text-light-muted text-lg leading-relaxed">
+              An <strong className="text-light-text">AI-native agency</strong>{" "}
+              is a professional services firm built from the ground up with
+              artificial intelligence at its core. Unlike traditional agencies
+              that add AI tools on top of existing human-driven processes, an
+              AI-native agency designs every workflow around AI capabilities
+              first, using human expertise to supervise, refine, and handle edge
+              cases.
+            </p>
+            <p className="mt-4 text-light-muted text-lg leading-relaxed">
+              The result is a fundamentally different business model: one that
+              operates with{" "}
+              <strong className="text-light-text">
+                software-like margins
+              </strong>{" "}
+              (65–80% vs. the traditional 20–35%), delivers at{" "}
+              <strong className="text-light-text">10x the speed</strong>, and
+              can{" "}
+              <strong className="text-light-text">
+                scale without linear headcount growth
+              </strong>
+              .
+            </p>
+            <Link
+              href="/blog/what-is-ai-native-agency"
+              className="inline-flex items-center mt-6 text-accent-light hover:text-accent font-medium transition-colors"
+            >
+              Read the full definition &rarr;
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -184,34 +196,44 @@ export default function HomePage() {
       </section>
 
       {/* The 3 Verticals */}
-      <section className="mx-auto max-w-6xl px-6 py-20">
-        <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-          The 3 Verticals of AI-Native Agencies
-        </h2>
-        <p className="mt-4 text-muted text-lg max-w-2xl">
-          AI-native agencies are emerging across three major categories of
-          professional services.
-        </p>
-        <div className="mt-12 grid md:grid-cols-3 gap-8">
-          {verticals.map((v) => (
-            <div
-              key={v.name}
-              className="p-6 rounded-xl border border-border bg-surface hover:bg-surface-light transition-colors"
-            >
-              <h3 className="text-xl font-bold">{v.name}</h3>
-              <p className="mt-3 text-muted text-sm leading-relaxed">
-                {v.description}
-              </p>
-              <p className="mt-4 text-xs text-muted font-mono">{v.examples}</p>
-            </div>
-          ))}
+      <section className="bg-light-bg">
+        <div className="mx-auto max-w-6xl px-6 py-20">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-light-text">
+            The 3 Verticals of AI-Native Agencies
+          </h2>
+          <p className="mt-4 text-light-muted text-lg max-w-2xl">
+            AI-native agencies are emerging across three major categories of
+            professional services.
+          </p>
+          <div className="mt-12 grid md:grid-cols-3 gap-8">
+            {verticals.map((v) => (
+              <div
+                key={v.name}
+                className={`p-6 rounded-xl border border-light-border bg-light-surface shadow-sm hover:shadow-md transition-shadow border-t-4 ${
+                  v.color === "cyan"
+                    ? "border-t-cyan"
+                    : v.color === "orange"
+                      ? "border-t-orange"
+                      : "border-t-emerald"
+                }`}
+              >
+                <h3 className="text-xl font-bold text-light-text">{v.name}</h3>
+                <p className="mt-3 text-light-muted text-sm leading-relaxed">
+                  {v.description}
+                </p>
+                <p className="mt-4 text-xs text-light-muted font-mono">
+                  {v.examples}
+                </p>
+              </div>
+            ))}
+          </div>
+          <Link
+            href="/blog/ai-native-agency-verticals"
+            className="inline-flex items-center mt-8 text-accent-light hover:text-accent font-medium transition-colors"
+          >
+            Explore all verticals in detail &rarr;
+          </Link>
         </div>
-        <Link
-          href="/blog/ai-native-agency-verticals"
-          className="inline-flex items-center mt-8 text-accent-light hover:text-accent font-medium transition-colors"
-        >
-          Explore all verticals in detail &rarr;
-        </Link>
       </section>
 
       {/* Key Advantages */}
@@ -223,7 +245,7 @@ export default function HomePage() {
           <div className="mt-12 grid md:grid-cols-3 gap-8">
             {advantages.map((a) => (
               <div key={a.label}>
-                <p className="text-4xl font-bold text-accent-light">
+                <p className={`text-4xl font-bold ${a.color}`}>
                   {a.metric}
                 </p>
                 <p className="mt-2 text-lg font-semibold">{a.label}</p>
@@ -243,37 +265,39 @@ export default function HomePage() {
       </section>
 
       {/* Featured Articles */}
-      <section className="mx-auto max-w-6xl px-6 py-20">
-        <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-          Featured Articles
-        </h2>
-        <p className="mt-4 text-muted text-lg max-w-2xl">
-          Deep-dive research on every aspect of the AI-native agency model.
-        </p>
-        <div className="mt-12 grid md:grid-cols-2 gap-6">
-          {pillarArticles.map((article) => (
-            <Link
-              key={article.href}
-              href={article.href}
-              className="group p-6 rounded-xl border border-border hover:border-accent/40 bg-surface hover:bg-surface-light transition-all"
-            >
-              <h3 className="text-lg font-semibold group-hover:text-accent-light transition-colors">
-                {article.title}
-              </h3>
-              <p className="mt-2 text-sm text-muted leading-relaxed">
-                {article.description}
-              </p>
-              <span className="inline-flex items-center mt-4 text-sm text-accent-light font-medium">
-                Read article &rarr;
-              </span>
-            </Link>
-          ))}
+      <section className="bg-light-bg">
+        <div className="mx-auto max-w-6xl px-6 py-20">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-light-text">
+            Featured Articles
+          </h2>
+          <p className="mt-4 text-light-muted text-lg max-w-2xl">
+            Deep-dive research on every aspect of the AI-native agency model.
+          </p>
+          <div className="mt-12 grid md:grid-cols-2 gap-6">
+            {pillarArticles.map((article) => (
+              <Link
+                key={article.href}
+                href={article.href}
+                className="group p-6 rounded-xl border border-light-border bg-light-surface shadow-sm hover:shadow-md hover:border-accent/40 transition-all"
+              >
+                <h3 className="text-lg font-semibold text-light-text group-hover:text-accent-light transition-colors">
+                  {article.title}
+                </h3>
+                <p className="mt-2 text-sm text-light-muted leading-relaxed">
+                  {article.description}
+                </p>
+                <span className="inline-flex items-center mt-4 text-sm text-accent-light font-medium">
+                  Read article &rarr;
+                </span>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Contact Form + Booking */}
       <section id="contact" className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--color-accent)_0%,_transparent_50%)] opacity-10" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--color-orange)_0%,_transparent_40%),radial-gradient(ellipse_at_bottom_right,_var(--color-accent)_0%,_transparent_40%)] opacity-15" />
         <div className="relative mx-auto max-w-6xl px-6 py-20 md:py-28">
           <div className="text-center mb-12">
             <p className="text-accent-light font-mono text-sm mb-4 tracking-wide uppercase">

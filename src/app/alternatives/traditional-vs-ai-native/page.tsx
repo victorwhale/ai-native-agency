@@ -40,7 +40,8 @@ export const metadata: Metadata = {
 
 export default function TraditionalVsAINative() {
   return (
-    <article className="mx-auto max-w-3xl px-6 py-16 md:py-24">
+    <article className="bg-light-bg min-h-screen">
+      <div className="mx-auto max-w-3xl px-6 py-16 md:py-24">
       <BreadcrumbStructuredData
         items={[
           { name: "Home", url: "https://ai-native-agency.com" },
@@ -77,7 +78,7 @@ export default function TraditionalVsAINative() {
         ]}
       />
 
-      <div className="prose prose-invert prose-lg max-w-none [&>h1]:text-4xl [&>h1]:md:text-5xl [&>h1]:font-bold [&>h1]:tracking-tight [&>h1]:leading-[1.15] [&>h1]:mb-6 [&>h2]:text-2xl [&>h2]:md:text-3xl [&>h2]:font-bold [&>h2]:tracking-tight [&>h2]:mt-16 [&>h2]:mb-6 [&>h3]:text-xl [&>h3]:font-semibold [&>h3]:mt-10 [&>h3]:mb-4 [&>p]:text-muted [&>p]:leading-relaxed [&>p]:mb-6 [&>ul]:text-muted [&>ul]:mb-6 [&>ul]:space-y-2 [&>ol]:text-muted [&>ol]:mb-6 [&>ol]:space-y-2 [&>blockquote]:border-l-4 [&>blockquote]:border-accent [&>blockquote]:pl-6 [&>blockquote]:italic [&>blockquote]:text-muted [&>blockquote]:my-8 [&_strong]:text-foreground [&_a]:text-accent-light [&_a]:underline [&_a:hover]:text-accent [&>hr]:border-border [&>hr]:my-12 [&_table]:text-muted">
+      <div className="prose prose-lg max-w-none [&>h1]:text-4xl [&>h1]:md:text-5xl [&>h1]:font-bold [&>h1]:tracking-tight [&>h1]:leading-[1.15] [&>h1]:mb-6 [&>h1]:text-light-text [&>h2]:text-2xl [&>h2]:md:text-3xl [&>h2]:font-bold [&>h2]:tracking-tight [&>h2]:mt-16 [&>h2]:mb-6 [&>h2]:text-light-text [&>h3]:text-xl [&>h3]:font-semibold [&>h3]:mt-10 [&>h3]:mb-4 [&>h3]:text-light-text [&>p]:text-light-muted [&>p]:leading-relaxed [&>p]:mb-6 [&>ul]:text-light-muted [&>ul]:mb-6 [&>ul]:space-y-2 [&>ol]:text-light-muted [&>ol]:mb-6 [&>ol]:space-y-2 [&>blockquote]:border-l-4 [&>blockquote]:border-accent [&>blockquote]:pl-6 [&>blockquote]:italic [&>blockquote]:text-light-muted [&>blockquote]:my-8 [&_strong]:text-light-text [&_a]:text-accent-light [&_a]:underline [&_a:hover]:text-accent [&>hr]:border-light-border [&>hr]:my-12 [&_table]:text-light-muted">
         <h1>Traditional Agency vs AI-Native Agency: Complete Breakdown</h1>
 
         <p>
@@ -664,6 +665,7 @@ export default function TraditionalVsAINative() {
         <p>
           <strong>Ready to explore AI-native services for your business?</strong> <Link href="/contact">Contact us</Link> to discuss how an AI-native approach can deliver better results at lower costs.
         </p>
+      </div>
       </div>
     </article>
   );
