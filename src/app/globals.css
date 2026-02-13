@@ -9,6 +9,14 @@
   --color-accent-light: #818cf8;
   --color-surface: #18181b;
   --color-surface-light: #1f1f23;
+  --color-light-bg: #f8fafc;
+  --color-light-text: #1e293b;
+  --color-light-muted: #64748b;
+  --color-light-border: #e2e8f0;
+  --color-light-surface: #ffffff;
+  --color-cyan: #06b6d4;
+  --color-orange: #f97316;
+  --color-emerald: #10b981;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
