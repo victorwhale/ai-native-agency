@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const navLinks = [
-  { href: "/blog/what-is-ai-native-agency", label: "What Is It?" },
+  { href: "/blog/ai-native-agency-complete-guide", label: "Complete Guide" },
   { href: "/blog/yc-ai-native-agency", label: "YC Thesis" },
   { href: "/blog/ai-native-agency-verticals", label: "Verticals" },
   { href: "/blog/ai-native-vs-traditional", label: "vs Traditional" },

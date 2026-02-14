@@ -4,6 +4,12 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 
 const pillarArticles = [
   {
+    href: "/blog/ai-native-agency-complete-guide",
+    title: "The Complete Guide to AI-Native Agencies (2026)",
+    description:
+      "Everything you need to know about AI-native agencies in one place: definition, business model, tech stack, pricing, verticals, case studies, and how to start one.",
+  },
+  {
     href: "/blog/what-is-ai-native-agency",
     title: "What Is an AI-Native Agency? The Definitive Guide",
     description:

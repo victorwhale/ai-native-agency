@@ -6,6 +6,10 @@ type ArticleLayoutProps = {
 
 const relatedArticles = [
   {
+    href: "/blog/ai-native-agency-complete-guide",
+    title: "The Complete Guide to AI-Native Agencies (2026)",
+  },
+  {
     href: "/blog/what-is-ai-native-agency",
     title: "What Is an AI-Native Agency?",
   },
