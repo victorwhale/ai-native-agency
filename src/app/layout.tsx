@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Geist, Geist_Mono, Space_Grotesk } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -96,6 +97,11 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <Script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="p30Q9FMnkKMt3sp6ZP+WJg"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

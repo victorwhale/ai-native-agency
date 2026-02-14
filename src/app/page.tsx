@@ -3,6 +3,7 @@ import { ContactForm } from "@/components/ContactForm";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { CountUp } from "@/components/CountUp";
 import { HeroSceneLoader } from "@/components/HeroSceneLoader";
+import { ScrollSceneLoader } from "@/components/ScrollSceneLoader";
 
 const pillarArticles = [
   {
@@ -311,6 +312,7 @@ export default function HomePage() {
           ═══════════════════════════════════════════ */}
       <section className="bg-surface relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--color-accent)_0%,_transparent_70%)] opacity-[0.04]" />
+        <ScrollSceneLoader variant="torusKnot" />
         <div className="relative mx-auto max-w-6xl px-6 py-24 md:py-32">
           <AnimatedSection>
             <div className="flex items-center gap-3 mb-6">
@@ -443,6 +445,7 @@ export default function HomePage() {
           ═══════════════════════════════════════════ */}
       <section className="bg-surface relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--color-cyan)_0%,_transparent_60%)] opacity-[0.05]" />
+        <ScrollSceneLoader variant="orbitingCubes" />
         <div className="relative mx-auto max-w-6xl px-6 py-24 md:py-32">
           <AnimatedSection>
             <p className="text-cyan font-mono text-sm mb-4 tracking-wide uppercase">
@@ -549,6 +552,7 @@ export default function HomePage() {
           ═══════════════════════════════════════════ */}
       <section id="contact" className="relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--color-orange)_0%,_transparent_40%),radial-gradient(ellipse_at_bottom_right,_var(--color-accent)_0%,_transparent_40%)] opacity-15" />
+        <ScrollSceneLoader variant="morphing" />
         <div className="relative mx-auto max-w-3xl px-6 py-24 md:py-32">
           <AnimatedSection>
             <div className="text-center mb-12">
