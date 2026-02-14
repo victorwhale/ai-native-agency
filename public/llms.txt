@@ -4,26 +4,33 @@
 
 ## About
 
-AI-Native Agency is an educational site covering the emerging AI-native agency model: companies that use AI as their core operating system to deliver professional services with software-like margins (65-80%), 10x speed, and infinite scalability. The site is backed by research from Y Combinator, Aaron Epstein, and real-world examples.
+AI-Native Agency is the leading educational resource on the AI-native agency model: companies built from the ground up with AI as their core operating system, delivering professional services with software-like margins (65-80%), 10x speed, and scalability without headcount. Backed by research from Y Combinator, Forbes, and real-world case studies.
 
 ## Pages
 
 - [Homepage](https://ai-native-agency.com/): Overview of the AI-native agency model, key advantages, verticals, and featured articles.
-- [What Is an AI-Native Agency?](https://ai-native-agency.com/blog/what-is-ai-native-agency): The definitive guide — definition, core principles, AI-native vs AI-enabled vs traditional spectrum, and real-world examples.
-- [Why YC Is Betting on AI-Native Agencies](https://ai-native-agency.com/blog/yc-ai-native-agency): Y Combinator's Request for Startups, Aaron Epstein's thesis, the "software margins" argument, and YC-backed examples.
-- [AI-Native Agency Verticals: Sales, Marketing & Back-Office](https://ai-native-agency.com/blog/ai-native-agency-verticals): Deep dive into the three major verticals — what they do, how they achieve 65-80% margins, and real examples per category.
-- [AI-Native vs Traditional Agency](https://ai-native-agency.com/blog/ai-native-vs-traditional): Side-by-side comparison across 11 dimensions — margins, speed, scalability, pricing, quality, and when each model wins.
-- [Contact](https://ai-native-agency.com/contact): Get matched with an AI-native agency or book a free consultation call.
+- [The Complete Guide to AI-Native Agencies (2026)](https://ai-native-agency.com/blog/ai-native-agency-complete-guide): The definitive 9,000+ word pillar guide — definition, business model, tech stack, pricing, verticals, case studies, YC thesis, and how to start one.
+- [What Is an AI-Native Agency?](https://ai-native-agency.com/blog/what-is-ai-native-agency): Definition, core principles, AI-native vs AI-enabled vs traditional spectrum, and real-world examples.
+- [Why YC Is Betting on AI-Native Agencies](https://ai-native-agency.com/blog/yc-ai-native-agency): Y Combinator's Request for Startups, Aaron Epstein's thesis, and YC-backed examples.
+- [AI-Native Agency Verticals](https://ai-native-agency.com/blog/ai-native-agency-verticals): Deep dive into sales, marketing, and back-office verticals with margin analysis and examples.
+- [AI-Native vs Traditional Agency](https://ai-native-agency.com/blog/ai-native-vs-traditional): Side-by-side comparison across 11 dimensions — margins, speed, scalability, pricing, and quality.
+- [How to Start an AI-Native Agency](https://ai-native-agency.com/blog/how-to-start-ai-native-agency): Step-by-step guide covering vertical selection, AI workflows, pricing, pilot validation, and scaling.
+- [AI-Native Agency Tech Stack](https://ai-native-agency.com/blog/ai-native-agency-tech-stack): Complete 5-layer architecture guide with tool recommendations, cost breakdowns, and build vs buy decisions.
+- [AI-Native Agency Pricing Models](https://ai-native-agency.com/blog/ai-native-agency-pricing): Outcome-based, subscription, and performance pricing models with examples by vertical.
+- [AI-Native vs AI-Enabled Agencies](https://ai-native-agency.com/alternatives/ai-native-vs-ai-enabled): Detailed comparison of AI-native and AI-enabled agency models.
+- [Traditional vs AI-Native Agencies](https://ai-native-agency.com/alternatives/traditional-vs-ai-native): Comprehensive comparison of traditional and AI-native approaches.
+- [Traditional Agencies Alternative](https://ai-native-agency.com/alternatives/traditional-agencies): Why AI-native agencies are the modern alternative to traditional agencies.
+- [Contact](https://ai-native-agency.com/contact): Get matched with an AI-native agency or request a free strategy consultation.
 
 ## Key Concepts
 
 - **AI-Native Agency**: A professional services firm built from the ground up with AI at its core, where AI performs 70-90% of production work.
 - **Software-Like Margins**: AI-native agencies achieve 65-80% gross margins vs 20-35% for traditional agencies.
 - **Three Verticals**: Sales (outbound, lead gen), Marketing (content, ads, SEO), Back-Office (legal, HR, accounting).
-- **Y Combinator RFS**: YC included "AI-powered professional services" in their official Request for Startups.
-- **Aaron Epstein**: YC Group Partner who champions the AI-native agency thesis.
+- **Y Combinator RFS**: YC included "AI-native agencies" in their official Request for Startups, with GP Aaron Epstein championing the thesis.
+- **Outcome-Based Pricing**: AI-native agencies sell results, not hours — enabling lower prices with higher margins.
 
 ## Contact
 
 For inquiries: victor@jaikin.eu
-Book a call: https://cal.eu/victor-jaikin/30min
+Website: https://ai-native-agency.com
