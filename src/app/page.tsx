@@ -4,6 +4,13 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import { CountUp } from "@/components/CountUp";
 import { HeroSceneLoader } from "@/components/HeroSceneLoader";
 import { ScrollSceneLoader } from "@/components/ScrollSceneLoader";
+import { TiltCard } from "@/components/TiltCard";
+import {
+  HorizontalScrollGallery,
+  HorizontalScrollCard,
+} from "@/components/HorizontalScrollGallery";
+import { ParallaxCard } from "@/components/ParallaxCard";
+import { FanOutCard } from "@/components/FanOutCard";
 
 const pillarArticles = [
   {
@@ -353,18 +360,20 @@ export default function HomePage() {
           </AnimatedSection>
 
           <AnimatedSection delay={200}>
-            <div className="mt-12 p-8 rounded-2xl bg-gradient-to-br from-surface-light to-surface border border-border/60 relative">
-              <div className="absolute top-0 left-8 w-1 h-full bg-gradient-to-b from-accent to-cyan rounded-full" />
-              <blockquote className="pl-8 text-xl md:text-2xl italic text-foreground/80 leading-relaxed font-light">
-                &quot;The professional services industry is ripe for disruption.
-                AI-native agencies can deliver the same outcomes as traditional
-                firms but with software-like margins and scalability.&quot;
-              </blockquote>
-              <p className="mt-4 pl-8 text-sm text-muted font-mono">
-                — The thesis behind Y Combinator&apos;s push into AI-powered
-                services
-              </p>
-            </div>
+            <FanOutCard>
+              <div className="mt-12 p-8 rounded-2xl bg-gradient-to-br from-surface-light to-surface border border-border/60 relative">
+                <div className="absolute top-0 left-8 w-1 h-full bg-gradient-to-b from-accent to-cyan rounded-full" />
+                <blockquote className="pl-8 text-xl md:text-2xl italic text-foreground/80 leading-relaxed font-light">
+                  &quot;The professional services industry is ripe for disruption.
+                  AI-native agencies can deliver the same outcomes as traditional
+                  firms but with software-like margins and scalability.&quot;
+                </blockquote>
+                <p className="mt-4 pl-8 text-sm text-muted font-mono">
+                  — The thesis behind Y Combinator&apos;s push into AI-powered
+                  services
+                </p>
+              </div>
+            </FanOutCard>
           </AnimatedSection>
 
           <AnimatedSection delay={300}>
@@ -403,24 +412,26 @@ export default function HomePage() {
               const colors = verticalColorMap[v.color];
               return (
                 <AnimatedSection key={v.name} delay={i * 100}>
-                  <div
-                    className={`group p-8 rounded-2xl border border-light-border bg-light-surface shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-t-4 ${colors.border} h-full`}
-                  >
+                  <TiltCard index={i}>
                     <div
-                      className={`w-12 h-12 rounded-xl ${colors.iconBg} ${colors.iconText} flex items-center justify-center mb-6`}
+                      className={`group p-8 rounded-2xl border border-light-border bg-light-surface shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-t-4 ${colors.border} h-full`}
                     >
-                      {v.icon}
+                      <div
+                        className={`w-12 h-12 rounded-xl ${colors.iconBg} ${colors.iconText} flex items-center justify-center mb-6`}
+                      >
+                        {v.icon}
+                      </div>
+                      <h3 className="text-xl font-bold text-light-text">
+                        {v.name}
+                      </h3>
+                      <p className="mt-4 text-light-muted text-sm leading-relaxed">
+                        {v.description}
+                      </p>
+                      <p className="mt-6 text-xs text-light-muted/70 font-mono border-t border-light-border pt-4">
+                        {v.examples}
+                      </p>
                     </div>
-                    <h3 className="text-xl font-bold text-light-text">
-                      {v.name}
-                    </h3>
-                    <p className="mt-4 text-light-muted text-sm leading-relaxed">
-                      {v.description}
-                    </p>
-                    <p className="mt-6 text-xs text-light-muted/70 font-mono border-t border-light-border pt-4">
-                      {v.examples}
-                    </p>
-                  </div>
+                  </TiltCard>
                 </AnimatedSection>
               );
             })}
@@ -459,28 +470,30 @@ export default function HomePage() {
           <div className="mt-16 grid md:grid-cols-3 gap-8">
             {advantages.map((a, i) => (
               <AnimatedSection key={a.label} delay={i * 150}>
-                <div className="relative p-8 rounded-2xl border border-border/40 bg-surface-light/50 backdrop-blur-sm">
-                  <div
-                    className={`absolute top-0 right-0 w-32 h-32 ${a.bgGlow} rounded-full blur-2xl -translate-y-1/2 translate-x-1/4 animate-float`}
-                  />
-                  <p
-                    className={`relative text-5xl md:text-6xl font-bold ${a.color} tracking-tight`}
-                  >
-                    {a.numericEnd > 0 ? (
-                      <CountUp
-                        end={a.numericEnd}
-                        prefix={a.numericPrefix}
-                        suffix={a.numericSuffix}
-                      />
-                    ) : (
-                      a.metric
-                    )}
-                  </p>
-                  <p className="mt-3 text-lg font-semibold">{a.label}</p>
-                  <p className="mt-3 text-sm text-muted leading-relaxed">
-                    {a.description}
-                  </p>
-                </div>
+                <ParallaxCard index={i}>
+                  <div className="relative p-8 rounded-2xl border border-border/40 bg-surface-light/50 backdrop-blur-sm">
+                    <div
+                      className={`absolute top-0 right-0 w-32 h-32 ${a.bgGlow} rounded-full blur-2xl -translate-y-1/2 translate-x-1/4 animate-float`}
+                    />
+                    <p
+                      className={`relative text-5xl md:text-6xl font-bold ${a.color} tracking-tight`}
+                    >
+                      {a.numericEnd > 0 ? (
+                        <CountUp
+                          end={a.numericEnd}
+                          prefix={a.numericPrefix}
+                          suffix={a.numericSuffix}
+                        />
+                      ) : (
+                        a.metric
+                      )}
+                    </p>
+                    <p className="mt-3 text-lg font-semibold">{a.label}</p>
+                    <p className="mt-3 text-sm text-muted leading-relaxed">
+                      {a.description}
+                    </p>
+                  </div>
+                </ParallaxCard>
               </AnimatedSection>
             ))}
           </div>
@@ -500,10 +513,10 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════════
-          FEATURED ARTICLES — Light, rich cards
+          FEATURED ARTICLES — Horizontal scroll gallery
           ═══════════════════════════════════════════ */}
       <section className="bg-light-bg">
-        <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
+        <div className="mx-auto max-w-6xl px-6 py-24 md:py-32 md:pb-0">
           <AnimatedSection>
             <p className="text-accent font-mono text-sm mb-4 tracking-wide uppercase">
               Deep Dives
@@ -516,14 +529,12 @@ export default function HomePage() {
               model.
             </p>
           </AnimatedSection>
+        </div>
 
-          <div className="mt-16 grid md:grid-cols-2 gap-6">
+        <div className="mt-16">
+          <HorizontalScrollGallery>
             {pillarArticles.map((article, i) => (
-              <AnimatedSection
-                key={article.href}
-                delay={i * 100}
-                className={i === 0 ? "md:col-span-2" : ""}
-              >
+              <HorizontalScrollCard key={article.href} isLarge={i === 0}>
                 <Link
                   href={article.href}
                   className="gradient-border-hover group flex flex-col p-8 rounded-2xl border border-light-border bg-light-surface shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 h-full"
@@ -541,9 +552,9 @@ export default function HomePage() {
                     </span>
                   </span>
                 </Link>
-              </AnimatedSection>
+              </HorizontalScrollCard>
             ))}
-          </div>
+          </HorizontalScrollGallery>
         </div>
       </section>
 
