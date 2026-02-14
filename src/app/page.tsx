@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { ContactForm } from "@/components/ContactForm";
-import { ScrollReveal } from "@/components/ScrollReveal";
+import { AnimatedSection } from "@/components/AnimatedSection";
+import { CountUp } from "@/components/CountUp";
+import { HeroSceneLoader } from "@/components/HeroSceneLoader";
 
 const pillarArticles = [
   {
@@ -40,6 +42,9 @@ const pillarArticles = [
 const advantages = [
   {
     metric: "65–80%",
+    numericEnd: 80,
+    numericPrefix: "",
+    numericSuffix: "%",
     label: "Gross Margins",
     description:
       "Software-like margins by replacing labor-intensive workflows with AI systems. Traditional agencies operate at 20–35%.",
@@ -48,6 +53,9 @@ const advantages = [
   },
   {
     metric: "10x",
+    numericEnd: 10,
+    numericPrefix: "",
+    numericSuffix: "x",
     label: "Faster Delivery",
     description:
       "What used to take a team of 5 people two weeks can be delivered in hours. AI compresses timelines dramatically.",
@@ -56,6 +64,9 @@ const advantages = [
   },
   {
     metric: "∞",
+    numericEnd: 0,
+    numericPrefix: "",
+    numericSuffix: "",
     label: "Scalability",
     description:
       "No linear headcount growth. AI systems handle 10 clients or 10,000 with marginal cost increases.",
@@ -67,7 +78,19 @@ const advantages = [
 const verticals = [
   {
     name: "Sales",
-    icon: "⚡",
+    icon: (
+      <svg
+        className="w-6 h-6"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+      </svg>
+    ),
     description:
       "Automate outbound prospecting, lead qualification, CRM management, and pipeline optimization. Replace entire SDR teams with intelligent systems that run 24/7.",
     examples:
@@ -76,7 +99,21 @@ const verticals = [
   },
   {
     name: "Marketing",
-    icon: "🎯",
+    icon: (
+      <svg
+        className="w-6 h-6"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <circle cx="12" cy="12" r="10" />
+        <circle cx="12" cy="12" r="6" />
+        <circle cx="12" cy="12" r="2" />
+      </svg>
+    ),
     description:
       "Produce content, manage ad campaigns, optimize SEO, and generate creative assets at scale — delivering in hours what traditional agencies take weeks to produce.",
     examples: "Content creation, ad management, SEO, creative production",
@@ -84,7 +121,19 @@ const verticals = [
   },
   {
     name: "Back-Office",
-    icon: "🔧",
+    icon: (
+      <svg
+        className="w-6 h-6"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+      </svg>
+    ),
     description:
       "Handle legal document review, accounting, HR processes, and recruiting — automating the repetitive work that traditionally required large teams of specialists.",
     examples: "Legal review, bookkeeping, HR automation, talent sourcing",
@@ -130,23 +179,26 @@ export default function HomePage() {
           }}
         />
 
+        {/* 3D Scene — desktop only, behind text */}
+        <HeroSceneLoader />
+
         <div className="relative mx-auto max-w-6xl px-6 w-full">
-          <ScrollReveal>
+          <AnimatedSection>
             <p className="text-accent-light font-mono text-sm mb-6 tracking-wide uppercase">
               The Future of Professional Services
             </p>
-          </ScrollReveal>
+          </AnimatedSection>
 
-          <ScrollReveal delay={100}>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.05] max-w-5xl">
+          <AnimatedSection delay={100}>
+            <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight leading-[1.05] max-w-5xl font-[family-name:var(--font-space-grotesk)]">
               The Age of the{" "}
               <span className="bg-gradient-to-r from-accent via-accent-light to-cyan bg-clip-text text-transparent">
                 AI-Native Agency
               </span>
             </h1>
-          </ScrollReveal>
+          </AnimatedSection>
 
-          <ScrollReveal delay={200}>
+          <AnimatedSection delay={200}>
             <p className="mt-8 text-xl md:text-2xl text-muted max-w-2xl leading-relaxed">
               A new category of professional services firm — one that uses AI as
               its core operating system to deliver outcomes with{" "}
@@ -154,13 +206,13 @@ export default function HomePage() {
               , <strong className="text-foreground">10x speed</strong>, and{" "}
               <strong className="text-foreground">infinite scalability</strong>.
             </p>
-          </ScrollReveal>
+          </AnimatedSection>
 
-          <ScrollReveal delay={300}>
+          <AnimatedSection delay={300}>
             <div className="mt-12 flex flex-wrap gap-4">
               <Link
                 href="#contact"
-                className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-accent to-accent-light text-white rounded-xl font-semibold text-lg hover:shadow-lg hover:shadow-accent/25 transition-all duration-300 hover:-translate-y-0.5"
+                className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-accent to-accent-light text-white rounded-xl font-semibold text-lg hover:shadow-lg hover:shadow-accent/25 transition-all duration-300 hover:-translate-y-1 active:scale-[0.98]"
               >
                 Get Your Free Strategy Call
                 <svg
@@ -175,12 +227,12 @@ export default function HomePage() {
               </Link>
               <Link
                 href="/blog/what-is-ai-native-agency"
-                className="inline-flex items-center px-8 py-4 border border-border/60 rounded-xl font-medium text-muted hover:text-foreground hover:border-foreground/30 hover:bg-surface/50 transition-all duration-300"
+                className="inline-flex items-center px-8 py-4 border border-border/60 rounded-xl font-medium text-muted hover:text-foreground hover:border-foreground/30 hover:bg-surface/50 transition-all duration-300 active:scale-[0.98]"
               >
                 See How It Works
               </Link>
             </div>
-          </ScrollReveal>
+          </AnimatedSection>
         </div>
 
         {/* Scroll indicator */}
@@ -208,12 +260,12 @@ export default function HomePage() {
           ═══════════════════════════════════════════ */}
       <section className="bg-light-bg">
         <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
-          <ScrollReveal>
+          <AnimatedSection>
             <div className="max-w-3xl">
               <p className="text-accent font-mono text-sm mb-4 tracking-wide uppercase">
                 Definition
               </p>
-              <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-light-text">
+              <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-light-text font-[family-name:var(--font-space-grotesk)]">
                 What Is an AI-Native Agency?
               </h2>
               <p className="mt-8 text-light-muted text-lg md:text-xl leading-relaxed">
@@ -250,7 +302,7 @@ export default function HomePage() {
                 </span>
               </Link>
             </div>
-          </ScrollReveal>
+          </AnimatedSection>
         </div>
       </section>
 
@@ -260,18 +312,25 @@ export default function HomePage() {
       <section className="bg-surface relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--color-accent)_0%,_transparent_70%)] opacity-[0.04]" />
         <div className="relative mx-auto max-w-6xl px-6 py-24 md:py-32">
-          <ScrollReveal>
+          <AnimatedSection>
             <div className="flex items-center gap-3 mb-6">
-              <span className="inline-flex items-center px-3 py-1 rounded-full bg-accent/10 border border-accent/20 text-accent-light text-xs font-mono uppercase tracking-wide">
+              <span
+                className="inline-flex items-center px-3 py-1 rounded-full bg-accent/10 border border-accent/20 text-accent-light text-xs font-mono uppercase tracking-wide animate-shimmer"
+                style={{
+                  backgroundImage:
+                    "linear-gradient(110deg, transparent 25%, rgba(99,102,241,0.15) 50%, transparent 75%)",
+                  backgroundSize: "200% 100%",
+                }}
+              >
                 Backed by YC Thesis
               </span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
+            <h2 className="text-3xl md:text-5xl font-bold tracking-tight font-[family-name:var(--font-space-grotesk)]">
               Why Now?
             </h2>
-          </ScrollReveal>
+          </AnimatedSection>
 
-          <ScrollReveal delay={100}>
+          <AnimatedSection delay={100}>
             <p className="mt-8 text-muted text-lg md:text-xl leading-relaxed max-w-3xl">
               The AI-native agency model isn&apos;t theoretical — it&apos;s
               being validated by the world&apos;s top startup accelerator.{" "}
@@ -289,9 +348,9 @@ export default function HomePage() {
               </strong>
               .
             </p>
-          </ScrollReveal>
+          </AnimatedSection>
 
-          <ScrollReveal delay={200}>
+          <AnimatedSection delay={200}>
             <div className="mt-12 p-8 rounded-2xl bg-gradient-to-br from-surface-light to-surface border border-border/60 relative">
               <div className="absolute top-0 left-8 w-1 h-full bg-gradient-to-b from-accent to-cyan rounded-full" />
               <blockquote className="pl-8 text-xl md:text-2xl italic text-foreground/80 leading-relaxed font-light">
@@ -304,9 +363,9 @@ export default function HomePage() {
                 services
               </p>
             </div>
-          </ScrollReveal>
+          </AnimatedSection>
 
-          <ScrollReveal delay={300}>
+          <AnimatedSection delay={300}>
             <Link
               href="/blog/yc-ai-native-agency"
               className="group inline-flex items-center mt-10 text-accent-light font-semibold transition-colors hover:text-accent"
@@ -316,7 +375,7 @@ export default function HomePage() {
                 &rarr;
               </span>
             </Link>
-          </ScrollReveal>
+          </AnimatedSection>
         </div>
       </section>
 
@@ -325,28 +384,28 @@ export default function HomePage() {
           ═══════════════════════════════════════════ */}
       <section className="bg-light-bg">
         <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
-          <ScrollReveal>
+          <AnimatedSection>
             <p className="text-accent font-mono text-sm mb-4 tracking-wide uppercase">
               Three Pillars
             </p>
-            <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-light-text">
+            <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-light-text font-[family-name:var(--font-space-grotesk)]">
               AI-Native Agency Verticals
             </h2>
             <p className="mt-4 text-light-muted text-lg md:text-xl max-w-2xl">
               Emerging across three major categories of professional services.
             </p>
-          </ScrollReveal>
+          </AnimatedSection>
 
           <div className="mt-16 grid md:grid-cols-3 gap-6">
             {verticals.map((v, i) => {
               const colors = verticalColorMap[v.color];
               return (
-                <ScrollReveal key={v.name} delay={i * 100}>
+                <AnimatedSection key={v.name} delay={i * 100}>
                   <div
                     className={`group p-8 rounded-2xl border border-light-border bg-light-surface shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-t-4 ${colors.border} h-full`}
                   >
                     <div
-                      className={`w-12 h-12 rounded-xl ${colors.iconBg} flex items-center justify-center text-2xl mb-6`}
+                      className={`w-12 h-12 rounded-xl ${colors.iconBg} ${colors.iconText} flex items-center justify-center mb-6`}
                     >
                       {v.icon}
                     </div>
@@ -360,12 +419,12 @@ export default function HomePage() {
                       {v.examples}
                     </p>
                   </div>
-                </ScrollReveal>
+                </AnimatedSection>
               );
             })}
           </div>
 
-          <ScrollReveal delay={400}>
+          <AnimatedSection delay={400}>
             <Link
               href="/blog/ai-native-agency-verticals"
               className="group inline-flex items-center mt-10 text-accent font-semibold transition-colors hover:text-accent-light"
@@ -375,7 +434,7 @@ export default function HomePage() {
                 &rarr;
               </span>
             </Link>
-          </ScrollReveal>
+          </AnimatedSection>
         </div>
       </section>
 
@@ -385,39 +444,45 @@ export default function HomePage() {
       <section className="bg-surface relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--color-cyan)_0%,_transparent_60%)] opacity-[0.05]" />
         <div className="relative mx-auto max-w-6xl px-6 py-24 md:py-32">
-          <ScrollReveal>
+          <AnimatedSection>
             <p className="text-cyan font-mono text-sm mb-4 tracking-wide uppercase">
               The Numbers
             </p>
-            <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
+            <h2 className="text-3xl md:text-5xl font-bold tracking-tight font-[family-name:var(--font-space-grotesk)]">
               The AI-Native Advantage
             </h2>
-          </ScrollReveal>
+          </AnimatedSection>
 
           <div className="mt-16 grid md:grid-cols-3 gap-8">
             {advantages.map((a, i) => (
-              <ScrollReveal key={a.label} delay={i * 150}>
-                <div
-                  className={`relative p-8 rounded-2xl border border-border/40 bg-surface-light/50 backdrop-blur-sm`}
-                >
+              <AnimatedSection key={a.label} delay={i * 150}>
+                <div className="relative p-8 rounded-2xl border border-border/40 bg-surface-light/50 backdrop-blur-sm">
                   <div
-                    className={`absolute top-0 right-0 w-32 h-32 ${a.bgGlow} rounded-full blur-2xl -translate-y-1/2 translate-x-1/4`}
+                    className={`absolute top-0 right-0 w-32 h-32 ${a.bgGlow} rounded-full blur-2xl -translate-y-1/2 translate-x-1/4 animate-float`}
                   />
                   <p
                     className={`relative text-5xl md:text-6xl font-bold ${a.color} tracking-tight`}
                   >
-                    {a.metric}
+                    {a.numericEnd > 0 ? (
+                      <CountUp
+                        end={a.numericEnd}
+                        prefix={a.numericPrefix}
+                        suffix={a.numericSuffix}
+                      />
+                    ) : (
+                      a.metric
+                    )}
                   </p>
                   <p className="mt-3 text-lg font-semibold">{a.label}</p>
                   <p className="mt-3 text-sm text-muted leading-relaxed">
                     {a.description}
                   </p>
                 </div>
-              </ScrollReveal>
+              </AnimatedSection>
             ))}
           </div>
 
-          <ScrollReveal delay={500}>
+          <AnimatedSection delay={500}>
             <Link
               href="/blog/ai-native-vs-traditional"
               className="group inline-flex items-center mt-10 text-accent-light font-semibold transition-colors hover:text-accent"
@@ -427,7 +492,7 @@ export default function HomePage() {
                 &rarr;
               </span>
             </Link>
-          </ScrollReveal>
+          </AnimatedSection>
         </div>
       </section>
 
@@ -436,25 +501,29 @@ export default function HomePage() {
           ═══════════════════════════════════════════ */}
       <section className="bg-light-bg">
         <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
-          <ScrollReveal>
+          <AnimatedSection>
             <p className="text-accent font-mono text-sm mb-4 tracking-wide uppercase">
               Deep Dives
             </p>
-            <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-light-text">
+            <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-light-text font-[family-name:var(--font-space-grotesk)]">
               Featured Articles
             </h2>
             <p className="mt-4 text-light-muted text-lg md:text-xl max-w-2xl">
               Research-backed analysis on every aspect of the AI-native agency
               model.
             </p>
-          </ScrollReveal>
+          </AnimatedSection>
 
           <div className="mt-16 grid md:grid-cols-2 gap-6">
             {pillarArticles.map((article, i) => (
-              <ScrollReveal key={article.href} delay={i * 100}>
+              <AnimatedSection
+                key={article.href}
+                delay={i * 100}
+                className={i === 0 ? "md:col-span-2" : ""}
+              >
                 <Link
                   href={article.href}
-                  className="group flex flex-col p-8 rounded-2xl border border-light-border bg-light-surface shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-accent/30 transition-all duration-300 h-full"
+                  className="gradient-border-hover group flex flex-col p-8 rounded-2xl border border-light-border bg-light-surface shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 h-full"
                 >
                   <h3 className="text-lg font-bold text-light-text group-hover:text-accent transition-colors leading-snug">
                     {article.title}
@@ -469,7 +538,7 @@ export default function HomePage() {
                     </span>
                   </span>
                 </Link>
-              </ScrollReveal>
+              </AnimatedSection>
             ))}
           </div>
         </div>
@@ -481,12 +550,12 @@ export default function HomePage() {
       <section id="contact" className="relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--color-orange)_0%,_transparent_40%),radial-gradient(ellipse_at_bottom_right,_var(--color-accent)_0%,_transparent_40%)] opacity-15" />
         <div className="relative mx-auto max-w-3xl px-6 py-24 md:py-32">
-          <ScrollReveal>
+          <AnimatedSection>
             <div className="text-center mb-12">
               <p className="text-orange font-mono text-sm mb-4 tracking-wide uppercase">
                 Let&apos;s Talk
               </p>
-              <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
+              <h2 className="text-3xl md:text-5xl font-bold tracking-tight font-[family-name:var(--font-space-grotesk)]">
                 Get Your Free Strategy Call
               </h2>
               <p className="mt-6 text-muted text-lg md:text-xl max-w-xl mx-auto leading-relaxed">
@@ -494,13 +563,13 @@ export default function HomePage() {
                 right AI-native agency to deliver results with 10x speed.
               </p>
             </div>
-          </ScrollReveal>
+          </AnimatedSection>
 
-          <ScrollReveal delay={100}>
+          <AnimatedSection delay={100}>
             <div className="p-8 md:p-10 rounded-2xl border border-border/60 bg-surface/50 backdrop-blur-sm">
               <ContactForm />
             </div>
-          </ScrollReveal>
+          </AnimatedSection>
         </div>
       </section>
     </>
