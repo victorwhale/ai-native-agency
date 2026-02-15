@@ -10,5 +10,9 @@ export default function robots(): MetadataRoute.Robots {
       },
     ],
     sitemap: "https://ai-native-agency.com/sitemap.xml",
+    host: "https://ai-native-agency.com",
   };
 }
+
+// Note: llms.txt and llms-full.txt are served from /public as static files
+// at /llms.txt and /llms-full.txt respectively

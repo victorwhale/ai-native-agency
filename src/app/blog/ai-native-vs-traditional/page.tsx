@@ -17,6 +17,19 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://ai-native-agency.com/blog/ai-native-vs-traditional",
   },
+  openGraph: {
+    title: "AI-Native Agency vs Traditional Agency: The Complete Comparison",
+    description:
+      "AI-native: 65-80% margins, 10x speed, 5-person teams. Traditional: 20-35% margins, weeks per deliverable. Full side-by-side comparison.",
+    type: "article",
+    url: "https://ai-native-agency.com/blog/ai-native-vs-traditional",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI-Native Agency vs Traditional Agency: The Complete Comparison",
+    description:
+      "AI-native: 65-80% margins, 10x speed, 5-person teams. Traditional: 20-35% margins, weeks per deliverable. Full side-by-side comparison.",
+  },
 };
 
 export default function AINativeVsTraditional() {

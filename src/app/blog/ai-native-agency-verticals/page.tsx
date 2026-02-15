@@ -20,6 +20,19 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://ai-native-agency.com/blog/ai-native-agency-verticals",
   },
+  openGraph: {
+    title: "The 3 Pillars of AI-Native Agencies: Sales, Marketing & Back-Office",
+    description:
+      "Sales, marketing, and back-office \u2014 the 3 verticals where AI-native agencies are replacing traditional firms. Real examples + margin analysis inside.",
+    type: "article",
+    url: "https://ai-native-agency.com/blog/ai-native-agency-verticals",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The 3 Pillars of AI-Native Agencies: Sales, Marketing & Back-Office",
+    description:
+      "Sales, marketing, and back-office \u2014 the 3 verticals where AI-native agencies are replacing traditional firms. Real examples + margin analysis inside.",
+  },
 };
 
 export default function AINativeAgencyVerticals() {

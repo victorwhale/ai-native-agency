@@ -3,7 +3,10 @@ import Script from "next/script";
 import { Geist, Geist_Mono, Space_Grotesk } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { WebSiteStructuredData } from "@/components/StructuredData";
+import {
+  WebSiteStructuredData,
+  OrganizationStructuredData,
+} from "@/components/StructuredData";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -52,8 +55,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/og-image.png",
-        width: 2752,
-        height: 1536,
+        width: 1200,
+        height: 669,
         alt: "AI-Native Agency — The Future of Professional Services",
       },
     ],
@@ -90,6 +93,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <WebSiteStructuredData />
+        <OrganizationStructuredData />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} antialiased`}

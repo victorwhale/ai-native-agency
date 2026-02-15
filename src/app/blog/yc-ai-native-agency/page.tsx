@@ -17,6 +17,19 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://ai-native-agency.com/blog/yc-ai-native-agency",
   },
+  openGraph: {
+    title: "Why Y Combinator and Aaron Epstein Are Betting on AI-Native Agencies",
+    description:
+      "YC added AI-native agencies to their Request for Startups. GP Aaron Epstein says they'll capture the $700B+ services market. Here's the full thesis.",
+    type: "article",
+    url: "https://ai-native-agency.com/blog/yc-ai-native-agency",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Why Y Combinator and Aaron Epstein Are Betting on AI-Native Agencies",
+    description:
+      "YC added AI-native agencies to their Request for Startups. GP Aaron Epstein says they'll capture the $700B+ services market. Here's the full thesis.",
+  },
 };
 
 export default function YCAINativeAgency() {

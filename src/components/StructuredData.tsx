@@ -107,6 +107,31 @@ export function WebSiteStructuredData() {
   );
 }
 
+export function OrganizationStructuredData() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "AI-Native Agency",
+    url: "https://ai-native-agency.com",
+    logo: "https://ai-native-agency.com/og-image.png",
+    description:
+      "The definitive resource on AI-native agencies — professional services firms that use AI as their core operating system.",
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: "victor@jaikin.eu",
+      contactType: "customer service",
+    },
+    sameAs: [],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
+  );
+}
+
 export function BreadcrumbStructuredData({
   items,
 }: {
