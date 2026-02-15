@@ -3,7 +3,6 @@ import Script from "next/script";
 import { Geist, Geist_Mono, Space_Grotesk } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { ScrollProgress } from "@/components/ScrollProgress";
 import { WebSiteStructuredData } from "@/components/StructuredData";
 import "./globals.css";
 
@@ -96,7 +95,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} antialiased`}
       >
         <Header />
-        <ScrollProgress />
         <main>{children}</main>
         <Footer />
         <Script
