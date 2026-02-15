@@ -6,7 +6,7 @@ import { ArticleStructuredData, FAQStructuredData, BreadcrumbStructuredData } fr
 export const metadata: Metadata = {
   title: "Why Y Combinator and Aaron Epstein Are Betting on AI-Native Agencies",
   description:
-    "Y Combinator has made AI-native agencies a priority in their Request for Startups. Learn about Aaron Epstein's thesis, YC-backed examples, and what this signals for the professional services industry.",
+    "YC added AI-native agencies to their Request for Startups. GP Aaron Epstein says they'll capture the $700B+ services market. Here's the full thesis.",
   keywords: [
     "YC AI-native agency",
     "Y Combinator AI agency",
@@ -24,7 +24,7 @@ export default function YCAINativeAgency() {
     <ArticleLayout>
       <ArticleStructuredData
         title="Why Y Combinator and Aaron Epstein Are Betting on AI-Native Agencies"
-        description="Y Combinator has made AI-native agencies a priority in their Request for Startups. Learn about Aaron Epstein's thesis, YC-backed examples, and what this signals for the professional services industry."
+        description="YC added AI-native agencies to their Request for Startups. GP Aaron Epstein says they'll capture the $700B+ services market. Here's the full thesis."
         slug="yc-ai-native-agency"
         datePublished="2026-02-11"
         dateModified="2026-02-11"

@@ -6,7 +6,7 @@ import { ArticleStructuredData, FAQStructuredData, BreadcrumbStructuredData } fr
 export const metadata: Metadata = {
   title: "The 3 Pillars of AI-Native Agencies: Sales, Marketing & Back-Office",
   description:
-    "AI-native agencies are disrupting three major verticals: sales, marketing, and back-office services. Explore real examples, margin analysis, and how each vertical achieves 65-80% gross margins.",
+    "Sales, marketing, and back-office \u2014 the 3 verticals where AI-native agencies are replacing traditional firms. Real examples + margin analysis inside.",
   keywords: [
     "AI-native agency verticals",
     "AI sales agency",
@@ -27,7 +27,7 @@ export default function AINativeAgencyVerticals() {
     <ArticleLayout>
       <ArticleStructuredData
         title="The 3 Pillars of AI-Native Agencies: Sales, Marketing & Back-Office"
-        description="AI-native agencies are disrupting three major verticals: sales, marketing, and back-office services. Explore real examples, margin analysis, and how each vertical achieves 65-80% gross margins."
+        description="Sales, marketing, and back-office \u2014 the 3 verticals where AI-native agencies are replacing traditional firms. Real examples + margin analysis inside."
         slug="ai-native-agency-verticals"
         datePublished="2026-02-11"
         dateModified="2026-02-11"

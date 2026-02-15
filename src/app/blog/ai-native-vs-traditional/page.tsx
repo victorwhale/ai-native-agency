@@ -6,7 +6,7 @@ import { ArticleStructuredData, FAQStructuredData, BreadcrumbStructuredData } fr
 export const metadata: Metadata = {
   title: "AI-Native Agency vs Traditional Agency: The Complete Comparison",
   description:
-    "A comprehensive side-by-side comparison of AI-native agencies and traditional agencies. Compare margins (65-80% vs 20-35%), speed, scalability, pricing models, and when each model wins.",
+    "AI-native: 65-80% margins, 10x speed, 5-person teams. Traditional: 20-35% margins, weeks per deliverable. Full side-by-side comparison.",
   keywords: [
     "AI-native agency vs traditional agency",
     "AI agency comparison",
@@ -24,7 +24,7 @@ export default function AINativeVsTraditional() {
     <ArticleLayout>
       <ArticleStructuredData
         title="AI-Native Agency vs Traditional Agency: The Complete Comparison"
-        description="A comprehensive side-by-side comparison of AI-native agencies and traditional agencies. Compare margins (65-80% vs 20-35%), speed, scalability, pricing models, and when each model wins."
+        description="AI-native: 65-80% margins, 10x speed, 5-person teams. Traditional: 20-35% margins, weeks per deliverable. Full side-by-side comparison."
         slug="ai-native-vs-traditional"
         datePublished="2026-02-11"
         dateModified="2026-02-11"

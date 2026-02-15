@@ -6,7 +6,7 @@ import { ArticleStructuredData, FAQStructuredData, BreadcrumbStructuredData } fr
 export const metadata: Metadata = {
   title: "The Complete Guide to AI-Native Agencies (2026)",
   description:
-    "The definitive 2026 guide to AI-native agencies. Learn what they are, how they work, the business model, tech stack, pricing, verticals, and how to start one. 5000+ word pillar resource.",
+    "The definitive guide: what AI-native agencies are, how they hit 65-80% margins, the tech stack, pricing models, and how to launch yours. 9,400+ words.",
   keywords: [
     "AI-native agency",
     "complete guide AI-native agency",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "The Complete Guide to AI-Native Agencies (2026)",
     description:
-      "The definitive 2026 guide to AI-native agencies. Learn what they are, how they work, the business model, tech stack, pricing, verticals, and how to start one. 5000+ word pillar resource.",
+      "The definitive guide: what AI-native agencies are, how they hit 65-80% margins, the tech stack, pricing models, and how to launch yours. 9,400+ words.",
     type: "article",
     url: "https://ai-native-agency.com/blog/ai-native-agency-complete-guide",
     images: [
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "The Complete Guide to AI-Native Agencies (2026)",
     description:
-      "The definitive 2026 guide to AI-native agencies. Learn what they are, how they work, the business model, tech stack, pricing, verticals, and how to start one. 5000+ word pillar resource.",
+      "The definitive guide: what AI-native agencies are, how they hit 65-80% margins, the tech stack, pricing models, and how to launch yours. 9,400+ words.",
   },
 };
 

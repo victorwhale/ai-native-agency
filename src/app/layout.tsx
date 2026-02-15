@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     template: "%s | AI-Native Agency",
   },
   description:
-    "AI-native agencies use artificial intelligence as their core operating system, delivering professional services with software-like margins, speed, and scalability. Learn why Y Combinator and top investors are betting on this model.",
+    "65-80% margins. 10x delivery speed. Infinite scale. AI-native agencies are replacing traditional firms \u2014 and YC is backing the shift. See why.",
   keywords: [
     "AI-native agency",
     "AI native agency",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     siteName: "AI-Native Agency",
     title: "AI-Native Agency — The Future of Professional Services",
     description:
-      "AI-native agencies use AI as their core operating system, delivering services with software-like margins and scalability.",
+      "65-80% margins. 10x delivery speed. Infinite scale. AI-native agencies are replacing traditional firms \u2014 and YC is backing the shift.",
     images: [
       {
         url: "/og-image.png",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AI-Native Agency — The Future of Professional Services",
     description:
-      "AI-native agencies use AI as their core operating system, delivering services with software-like margins and scalability.",
+      "65-80% margins. 10x delivery speed. Infinite scale. AI-native agencies are replacing traditional firms \u2014 and YC is backing the shift.",
     images: ["/og-image.png"],
   },
   robots: {

@@ -6,7 +6,7 @@ import { ArticleStructuredData, FAQStructuredData, BreadcrumbStructuredData } fr
 export const metadata: Metadata = {
   title: "What Is an AI-Native Agency? The Definitive Guide",
   description:
-    "An AI-native agency is a professional services firm built from the ground up with AI at its core. Learn the definition, core principles, and how it differs from traditional and AI-enabled agencies.",
+    "An AI-native agency uses AI as its core operating system \u2014 not a bolt-on tool. 65-80% margins, 10x speed, 5-person teams serving 100+ clients. Full breakdown.",
   keywords: [
     "AI-native agency",
     "what is AI-native agency",
@@ -20,14 +20,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "What Is an AI-Native Agency? The Definitive Guide",
     description:
-      "An AI-native agency is a professional services firm built from the ground up with AI at its core. Learn the definition, core principles, and how it differs from traditional and AI-enabled agencies.",
+      "An AI-native agency uses AI as its core operating system \u2014 not a bolt-on tool. 65-80% margins, 10x speed, 5-person teams serving 100+ clients. Full breakdown.",
     type: "article",
   },
   twitter: {
     card: "summary_large_image",
     title: "What Is an AI-Native Agency? The Definitive Guide",
     description:
-      "An AI-native agency is a professional services firm built from the ground up with AI at its core. Learn the definition, core principles, and how it differs from traditional and AI-enabled agencies.",
+      "An AI-native agency uses AI as its core operating system \u2014 not a bolt-on tool. 65-80% margins, 10x speed, 5-person teams serving 100+ clients. Full breakdown.",
   },
 };
 
@@ -36,7 +36,7 @@ export default function WhatIsAINativeAgency() {
     <ArticleLayout>
       <ArticleStructuredData
         title="What Is an AI-Native Agency? The Definitive Guide"
-        description="An AI-native agency is a professional services firm built from the ground up with AI at its core. Learn the definition, core principles, and how it differs from traditional and AI-enabled agencies."
+        description="An AI-native agency uses AI as its core operating system \u2014 not a bolt-on tool. 65-80% margins, 10x speed, 5-person teams serving 100+ clients. Full breakdown."
         slug="what-is-ai-native-agency"
         datePublished="2026-02-11"
         dateModified="2026-02-11"
@@ -77,6 +77,15 @@ export default function WhatIsAINativeAgency() {
         ]}
       />
       <h1>What Is an AI-Native Agency? The Definitive Guide</h1>
+
+      <div style={{ background: "linear-gradient(135deg, #f0f4ff 0%, #e8f4f8 100%)", border: "1px solid #c7d2fe", borderRadius: "12px", padding: "24px 28px", margin: "24px 0 32px" }}>
+        <p style={{ fontWeight: 700, fontSize: "16px", marginBottom: "8px", color: "#312e81" }}>
+          Quick definition
+        </p>
+        <p style={{ fontSize: "17px", lineHeight: 1.7, margin: 0, color: "#1e293b" }}>
+          An <strong>AI-native agency</strong> is a professional services firm where AI performs 70&ndash;90% of production work, with humans supervising quality and strategy. Unlike traditional agencies (20&ndash;35% margins), AI-native agencies achieve <strong>65&ndash;80% gross margins</strong>, deliver <strong>10x faster</strong>, and scale without linear headcount growth &mdash; a team of 5 can serve 100+ clients.
+        </p>
+      </div>
 
       <p>
         An <strong>AI-native agency</strong> is a professional services firm
